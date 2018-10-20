@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              <h1 className="has-text-weight-bold is-size-2">Latest Jobs</h1>
             </div>
             {posts
               .map(({ node: post }) => (
@@ -30,9 +30,6 @@ export default class IndexPage extends React.Component {
                     <small>{post.frontmatter.date}</small>
                   </p>
                   <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
                     <Link className="button is-small" to={post.fields.slug}>
                       Keep Reading →
                     </Link>
@@ -58,7 +55,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "job-post" } }}
     ) {
       edges {
         node {
@@ -71,6 +68,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            location
           }
         }
       }

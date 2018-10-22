@@ -4,6 +4,7 @@ title: 'Barista'
 date: 2017-01-04T15:04:10.000Z
 description: Be a Barista, it's amazing
 location: 'London'
+salary: '£12 per hour'
 tags:
   - coffee
   - money

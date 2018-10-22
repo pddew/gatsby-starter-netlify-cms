@@ -8,6 +8,7 @@ const JobPostPreview = ({ entry, widgetFor }) => (
     description={entry.getIn(['data', 'description'])}
     location={entry.getIn(['data', 'location'])}
     tags={entry.getIn(['data', 'tags'])}
+    salary={entry.getIn(['data', 'salary'])}
     title={entry.getIn(['data', 'title'])}
   />
 )

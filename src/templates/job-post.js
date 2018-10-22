@@ -69,6 +69,7 @@ const JobPost = ({ data }) => {
         location={post.frontmatter.location}
         helmet={<Helmet title={`${post.frontmatter.title} | Job`} />}
         tags={post.frontmatter.tags}
+        salary={post.frontmatter.salary}
         title={post.frontmatter.title}
       />
     </Layout>
@@ -93,6 +94,7 @@ export const pageQuery = graphql`
         title
         description
         location
+        salary
         tags
       }
     }

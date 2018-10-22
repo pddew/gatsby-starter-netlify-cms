@@ -2,7 +2,7 @@
 templateKey: job-post
 title: Job ad added from Netlify CMS
 date: 2018-10-20T22:04:44.396Z
-description: Testing descriptiom
+description: Testing description
 location: London
 tags:
   - Tag1

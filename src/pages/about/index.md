@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: About Epic Jobs
+title: About
 ---
 ### All Change
 

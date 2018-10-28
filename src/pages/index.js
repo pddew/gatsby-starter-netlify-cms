@@ -39,6 +39,7 @@ export default class IndexPage extends React.Component {
               ))}
           </div>
         </section>
+        <footer><p>Some test footer content</p></footer>
       </Layout>
     )
   }

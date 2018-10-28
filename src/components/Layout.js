@@ -6,7 +6,7 @@ import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Epic Jobs" />
+    <Helmet title="Immediate Start Jobs" />
     <Navbar />
     <div>{children}</div>
   </div>

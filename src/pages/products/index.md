@@ -31,22 +31,24 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: ''
-  description: ''
+  heading: test
+  description: test
   image1:
-    alt: ''
+    alt: test
     image: ''
   image2:
-    alt: ''
+    alt: test
     image: ''
   image3:
-    alt: ''
+    alt: test
     image: ''
-testimonials: []
+testimonials:
+  - author: test
+    quote: test
 full_image: /img/flavor_wheel.jpg
 pricing:
-  heading: ''
-  description: ''
+  heading: test
+  description: test
   plans: []
 ---
 

@@ -49,6 +49,11 @@ full_image: /img/flavor_wheel.jpg
 pricing:
   heading: test
   description: test
-  plans: []
+  plans:
+    - description: '3'
+      items:
+        - '4'
+      plan: '1'
+      price: '2'
 ---
 

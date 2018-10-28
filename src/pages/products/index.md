@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
 title: Our Products
-image: /img/jumbotron.jpg
+image: /img/products-grid1.jpg
 heading: Products and Services
 description: We offer several ways to get more candidates
 intro:

@@ -2,26 +2,16 @@
 templateKey: about-page
 title: Our mission
 ---
-**Immediate-start is on a mission to make it online-hiring accessible for everyone.**
-
-We believe the current jobs industry has a trust-problem, and over-crowded with clunky, expensive and sites that don't work. 
-
-We want to fix this problem, with free, easy and privacy-focussed products.
+We want to make online-hiring easy for everyone, with free, simple and secure web products.
 
 ## Free
 
-Old-school 'pay and pray' job boards charge you up front and hope your ad performs. Many will try to sell you upgrades that don't work.
+Adverts are free! If you want an extra boost, we do have [paid upgrades](https://immediate-start.com/products/) with guaranteed performance.
 
-Our way: Adverts are free! If you want an extra boost, we do have [paid upgrades](https://immediate-start.com/products/) with guaranteed performance.
+## Simple
 
-## Easy
+Many boards out there are complicated and time-consuming. We want you to post quickly so you can get back to the important job of running your business.
 
-Old-school boards are a pain. You need to register, verify, fill out long complicated forms and then fend off sales calls.
+## Secure
 
-Our way: Simply click 'post a job' and fill one form, whatever your device. Easy!
-
-## Private
-
-Other boards want as much data on you as they can get; for advertising, sales calls and everything else.
-
-Our way: We'd rather not have it, and only ask for and keep what we need to bring you candidates.
+We value privacy and prefer not to track your data, so we only keep what is absolutely necessary to help you hire. Feel free to email us if you want to find out more.

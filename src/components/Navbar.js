@@ -25,10 +25,11 @@ const Navbar = () => (
       </div>
       <div className="navbar-end">
         <a
-          className="button button-padding-vertical is-info"
+          className="button is-info"
           href="https://pddew.typeform.com/to/c7GRuU"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ margin: '10px' }}
         >
         Post a job ad
         </a>

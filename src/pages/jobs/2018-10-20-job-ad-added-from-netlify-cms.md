@@ -2,8 +2,9 @@
 templateKey: job-post
 title: Job ad added from Netlify CMS
 date: 2018-10-20T22:04:44.396Z
-description: Testing description
+description: The only reason honey is made is for me to eat it
 location: London
+salary: '£12 per hour'
 tags:
   - Tag1
 ---

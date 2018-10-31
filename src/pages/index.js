@@ -15,26 +15,33 @@ export default class IndexPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Latest Jobs</h1>
             </div>
+
+
             {posts
               .map(({ node: post }) => (
                 <div
-                  className="content"
+                  className="content level"
                   style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                   key={post.id}
                 >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
+                <div className="level-left">
+                  <div>
+                      <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                    <small>{post.frontmatter.salary}</small>
-                  </p>
-                  <p>
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Apply →
-                    </Link>
-                  </p>
+                      </Link> <br/>
+                      <p>{post.frontmatter.description}</p>
+                      <span className="tag is-light">{post.frontmatter.salary} </span>&nbsp;
+                      <span className="tag is-light">{post.frontmatter.location}</span>
+                      </div>
+                </div>
+                <div className="level-right">
+                <small>{post.frontmatter.date}</small> &nbsp;
+
+                      <Link className="button is-primary" to={post.fields.slug}>
+                        Apply 
+                      </Link>
+                      
+                </div>
                 </div>
               ))}
           </div>
@@ -71,6 +78,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             description
             salary
+            location
           }
         }
       }

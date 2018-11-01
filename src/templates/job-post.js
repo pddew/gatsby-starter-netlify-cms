@@ -13,6 +13,7 @@ export const JobPostTemplate = ({
   description,
   location,
   validThru,
+  salary,
   company,
   tags,
   title,
@@ -25,26 +26,30 @@ export const JobPostTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-10 is-offset-1 content">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <div className="box">
+            <p>{salary}</p>
             <p>{location}</p>
-            <p>{description}</p>
             <p>{company}</p>
-            <PostContent content={content} />
+            <p>{description}</p>
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
+              <div>
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      <span className="tag is-info"><Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link></span>
                     </li>
                   ))}
                 </ul>
               </div>
             ) : null}
+            </div>
+           
+            <PostContent content={content} />
+           
           </div>
         </div>
       </div>

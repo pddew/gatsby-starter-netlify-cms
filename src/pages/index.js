@@ -20,28 +20,31 @@ export default class IndexPage extends React.Component {
             {posts
               .map(({ node: post }) => (
                 <div
-                  className="content level"
-                  style={{ border: '1px solid #eaecee', padding: '1.5em 3em' }}
+                  className="content box"
                   key={post.id}
                 >
-                <div className="level-left">
-                  <div>
-                      <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                      </Link>
-                      <p>{post.frontmatter.company}</p>
-                      <p>{post.frontmatter.description}</p>
-                      <span className="tag is-light">{post.frontmatter.salary} </span>&nbsp;
-                      <span className="tag is-light">{post.frontmatter.location}</span>&nbsp;
-                      <span className="tag is-light">Expires: {post.frontmatter.validThru}</span>
-                      </div>
-                </div>
-                <div className="level-right">
-                <small>{post.frontmatter.date}</small> &nbsp;
-                      <Link className="button is-primary" to={post.fields.slug}>
+                <div className="columns">
+                  <div className="column">
+                    <div>
+                          <Link className="has-text-primary" to={post.fields.slug}>
+                          <h4>{post.frontmatter.title}</h4>
+                          </Link>
+                          <p>{post.frontmatter.company}</p>
+                          <div className="content">
+                          <p>{post.frontmatter.description}</p>
+                          </div>
+                          <span className="tag is-light">{post.frontmatter.salary} </span>&nbsp;
+                          <span className="tag is-light">{post.frontmatter.location}</span>&nbsp;
+                          <span className="tag is-light">Expires: {post.frontmatter.validThru}</span>
+                    </div>
+                  </div>
+                  <div className="column is-one-fifth is-inline-block">
+                      <p className="is-pulled-right"><small>&nbsp;posted: {post.frontmatter.date}</small></p>
+                      <Link className="button is-primary is-pulled-right" to={post.fields.slug}>
                         Apply 
                       </Link>
-                </div>
+                  </div>
+                  </div>
                 </div>
               ))}
           </div>

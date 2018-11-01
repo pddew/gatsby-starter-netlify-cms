@@ -9,7 +9,9 @@ description: >-
 location: London
 salary: £325.00 to £600.00 /week
 tags:
-  - full-time permanent part-time
+  - full-time
+  - permanent
+  - part-time
 ---
 National vehicle delivery company DMN Logistics Ltd have exciting opportunities for self – employed trade plate drivers based in London and surrounding region to collect/ deliver vehicles nationwide.
 

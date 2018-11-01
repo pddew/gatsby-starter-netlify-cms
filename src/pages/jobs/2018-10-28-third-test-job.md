@@ -5,6 +5,8 @@ date: 2018-10-28T09:22:22.697Z
 description: Move fast and break things
 location: London
 salary: £12 per hour
+company: baconCo
+validThru:  2018-10-29
 tags:
   - tag1
 ---

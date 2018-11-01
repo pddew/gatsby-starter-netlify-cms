@@ -5,12 +5,15 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import googleJobsSchema from '../components/Layout'
 
 export const JobPostTemplate = ({
   content,
   contentComponent,
   description,
   location,
+  validThru,
+  company,
   tags,
   title,
   helmet,
@@ -28,6 +31,7 @@ export const JobPostTemplate = ({
             </h1>
             <p>{location}</p>
             <p>{description}</p>
+            <p>{company}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -52,8 +56,10 @@ JobPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
+  validThru: PropTypes.string,
   location: PropTypes.string,
   title: PropTypes.string,
+  company: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
@@ -66,7 +72,9 @@ const JobPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        validThru={post.frontmatter.validThru}
         location={post.frontmatter.location}
+        company={post.frontmatter.company}
         helmet={<Helmet title={`${post.frontmatter.title} | Job`} />}
         tags={post.frontmatter.tags}
         salary={post.frontmatter.salary}
@@ -93,6 +101,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        validThru(formatString: "MMMM DD, YYYY")
+        company
         location
         salary
         tags

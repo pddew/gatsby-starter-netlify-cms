@@ -5,6 +5,7 @@ date: 2018-10-20T22:04:44.396Z
 description: The only reason honey is made is for me to eat it
 location: London
 salary: '£12 per hour'
+company: Bacon Company
 tags:
   - Tag1
 ---

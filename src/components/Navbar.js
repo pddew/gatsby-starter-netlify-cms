@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 const Navbar = () => (
   <nav className="navbar is-transparent">
     <div className="container">
       <div className="navbar-brand">
       <Link to="/" className="navbar-item">
           <h1>Immediate Start Jobs</h1>
-        </Link> 
+        </Link>
+
       </div>
       <div className="navbar-menu is-active" id="navMenu">
       <div className="navbar-start">

@@ -21,26 +21,26 @@ export default class IndexPage extends React.Component {
               .map(({ node: post }) => (
                 <div
                   className="content level"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                  style={{ border: '1px solid #eaecee', padding: '1.5em 3em' }}
                   key={post.id}
                 >
                 <div className="level-left">
                   <div>
                       <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
-                      </Link> <br/>
+                      </Link>
+                      <p>{post.frontmatter.company}</p>
                       <p>{post.frontmatter.description}</p>
                       <span className="tag is-light">{post.frontmatter.salary} </span>&nbsp;
-                      <span className="tag is-light">{post.frontmatter.location}</span>
+                      <span className="tag is-light">{post.frontmatter.location}</span>&nbsp;
+                      <span className="tag is-light">Expires: {post.frontmatter.validThru}</span>
                       </div>
                 </div>
                 <div className="level-right">
                 <small>{post.frontmatter.date}</small> &nbsp;
-
                       <Link className="button is-primary" to={post.fields.slug}>
                         Apply 
                       </Link>
-                      
                 </div>
                 </div>
               ))}
@@ -76,8 +76,10 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            validThru(formatString: "MMMM DD, YYYY")
             description
             salary
+            company
             location
           }
         }
